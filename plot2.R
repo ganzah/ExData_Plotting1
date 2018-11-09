@@ -11,4 +11,5 @@ data$DateAndTime <- strptime(paste(data$Date, data$Time, sep = " - "), format = 
 Sys.setlocale("LC_ALL", "English")
 plot(data$DateAndTime, data$Global_active_power, type = "n", ylab = "Global Active Power (kilowatts)", xlab = "")
 lines(data$DateAndTime, data$Global_active_power)
+Sys.setlocale("LC_ALL", "")
 dev.off()
