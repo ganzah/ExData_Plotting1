@@ -21,7 +21,7 @@ plot(data$DateAndTime, data$Sub_metering_1, type = "n", ylab = "Energy sub meter
 lines(data$DateAndTime, data$Sub_metering_1, col = "black")
 lines(data$DateAndTime, data$Sub_metering_2, col = "red")
 lines(data$DateAndTime, data$Sub_metering_3, col = "blue")
-legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lty = c(1, 1, 1))
+legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lty = c(1, 1, 1), bty = "n")
 
 plot(data$DateAndTime, data$Global_reactive_power, type = "n", xlab = "datetime")
 lines(data$DateAndTime, data$Global_reactive_power)
